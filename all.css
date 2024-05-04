@@ -171,10 +171,10 @@ p {
 }
 
 
-/* Paginati區塊 */
+/* Pagination區塊 */
 .paginationbar {
   width: 152px;
-  margin: 72px auto;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
