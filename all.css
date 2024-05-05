@@ -35,9 +35,12 @@ body {
   margin-right: 40px;
 }
 
+.menu li:hover {
+  border: 1px gray solid;
+}
+
 .menuActive {
   font-weight: 600;
-  border: 1px gray solid;
 }
 
 
@@ -185,10 +188,13 @@ p {
   width: 40px;
   height: 40px;
   border-radius: 4px;
-  /* background-color: pink; */
   font-size: 24px;
   text-align: center;
   line-height: 40px;
+}
+
+.pagination:hover {
+  background-color: #cecbcb;
 }
 
 .paginationbar .active {
@@ -203,8 +209,92 @@ p {
 
 
 /* footer區塊 */
-.footer {
-  height: 100px;
+/* 1.背景圖片 */
+.footerbg {
   background-color: #FAFAFA;
+  position: relative;
+}
+
+.footerbg>img {
+  position: absolute;
+}
+
+.footerbg img:nth-child(2) {
+  position: absolute;
+  bottom: 0px;
+}
+
+.footerbg img:nth-child(3) {
+  position: absolute;
+  bottom: 320px;
+  left: 666px;
+}
+
+.footerbg img:nth-child(4) {
+  position: absolute;
+  bottom: 68px;
+  right: 5px;
+}
+
+.footerbg img:nth-child(5) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* 2.背景內容 */
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  height: 424px;
+  align-items: center;
   margin-top: 100px;
+}
+
+.contact p {
+  margin-top: 24px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.email {
+  color: #919191;
+  margin-top: 24px;
+}
+
+.socialmedia {
+  height: 264px;
+}
+
+.medialink {
+  display: flex;
+  width: 306px;
+  height: 72px;
+  align-items: center;
+  padding: 8px 24px;
+  border: #C1C1C1 1px solid;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.socialmedia .bbg {
+  background-color: #1E1E1E;
+}
+
+.socialmedia .bbg>p {
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+
+
+.medialink p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-left: 8px;
+  color: #3B3B3B;
 }
