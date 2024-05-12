@@ -4,6 +4,16 @@
   margin: 0 auto;
 }
 
+@media(max-width:376px) {
+  .container {
+    padding: 0 12px;
+  }
+}
+
+
+
+
+
 /* 通用字型 */
 body {
   font-family: "Noto Sans", sans-serif;
@@ -14,6 +24,7 @@ body {
 .header {
   padding: 28px 0px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -25,14 +36,52 @@ body {
 }
 
 .menu {
+  width: 480px;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-left: 318px;
+}
+
+/* 漢堡選單,桌機版預設看不見 */
+.burger,
+#mobilemenu {
+  display: none;
+}
+
+@media(max-width:376px) {
+  .header {
+    justify-content: space-between;
+    padding: 28px 12px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: stretch;
+    margin-left: 0px;
+    text-align: center;
+    padding: 28px 0px;
+  }
+
+  .menu li {
+    margin: 12px 0px 12px 0px;
+  }
+
+  /* 手機板會出現 */
+  .burger {
+    display: block;
+  }
+
+  #mobilemenu:checked~.menu {
+    display: hidden;
+  }
+
 }
 
 .menu li {
   padding: 4px 8px;
   line-height: 24px;
-  margin-right: 40px;
+  border: 1px transparent solid;
 }
 
 .menu li:hover {
@@ -54,8 +103,7 @@ body {
 }
 
 .slogan {
-  width: 679px;
-  height: 192px;
+  max-width: 679px;
   padding: 59px 71px;
   margin: 0 auto;
   position: relative;
@@ -101,10 +149,18 @@ body {
 /* banner-feature */
 
 .feature {
-  width: 636px;
+  max-width: 636px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+@media (max-width:376px) {
+  .feature {
+    margin-top: 40px;
+    justify-content: center;
+  }
 }
 
 .box p {
@@ -227,7 +283,7 @@ p {
 .footerbg img:nth-child(3) {
   position: absolute;
   bottom: 320px;
-  left: 666px;
+  /* left: 666px; */
 }
 
 .footerbg img:nth-child(4) {
@@ -247,12 +303,30 @@ p {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  height: 424px;
+  padding: 80px 0px;
   align-items: center;
   margin-top: 100px;
   /* 讓底圖的圈圈線置於連結按鈕底下(?) */
   position: relative;
+}
+
+
+@media(max-width:376px) {
+  .footer {
+    text-align: center;
+    padding: 0 12px;
+  }
+
+  .contact {
+    margin: 40px auto
+  }
+
+  .socialmedia {
+    margin: 0px auto 40px auto;
+  }
+
 }
 
 .contact p {
@@ -264,10 +338,6 @@ p {
 .email {
   color: #919191;
   margin-top: 24px;
-}
-
-.socialmedia {
-  height: 264px;
 }
 
 .medialink {
