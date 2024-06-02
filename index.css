@@ -1,0 +1,498 @@
+@charset "UTF-8";
+* {
+  outline: 1px solid red;
+}
+
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+/* 通用字型 */
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+header img {
+  width: 90px;
+  height: 40px;
+  margin: 28px 318px 28px 0px;
+}
+header .menu-btn {
+  border: 0px;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  background: url("./img/google material icon.png");
+  display: none;
+}
+
+.menu {
+  width: 480px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu li {
+  font-size: 16px;
+  padding: 4px 8px;
+}
+
+@media (max-width: 376px) {
+  button {
+    display: block;
+  }
+  .menu {
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    padding: 28px;
+  }
+  .menu li {
+    margin: 12px 0px;
+  }
+}
+.hero {
+  display: flex;
+}
+.hero .hero-left {
+  width: 40%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 24px;
+}
+.hero .hero-left .content {
+  width: 430px;
+}
+.hero .hero-left .content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  color: #3B3B3B;
+  margin-bottom: 24px;
+}
+.hero .hero-left .content .text {
+  font-size: 20px;
+  line-height: 30px;
+  color: #5B5B5B;
+  margin-bottom: 8px;
+}
+.hero .hero-left .content .sub-p {
+  font-size: 16px;
+  line-height: 20px;
+  color: #C1C1C1;
+  margin-top: 16px;
+}
+.hero .hero-left .content .socialMedia {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.hero .hero-right {
+  width: 60%;
+}
+.hero .hero-right .banner-sm {
+  display: none;
+}
+
+@media (max-width: 376px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero .hero-left {
+    width: 100%;
+  }
+  .hero .hero-left .content {
+    width: 268px;
+    margin: 40px 53.5px;
+    text-align: center;
+  }
+  .hero .hero-left .content h1 {
+    font-family: Noto Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38.4px;
+  }
+  .hero .hero-left .content .socialMedia {
+    width: 152px;
+    margin: 60px auto;
+  }
+  .hero .hero-left .content .socialMedia img {
+    width: 40px;
+    height: 40px;
+  }
+  .hero .hero-right {
+    width: 100%;
+  }
+  .hero .hero-right .banner-sm {
+    display: block;
+  }
+  .hero .hero-right .banner-lg {
+    display: none;
+  }
+}
+h2 {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 38.4px;
+  letter-spacing: 0.12em;
+  margin-top: 120px;
+  margin-bottom: 80px;
+  text-align: center;
+}
+h2 span img {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.section-01 {
+  background: url("./img/unerverse-bg.png") no-repeat;
+}
+.section-01 .works01-img {
+  margin-top: 80px;
+}
+.section-01 .workCard {
+  width: 526px;
+  height: 400px;
+  padding: 80px 40px 0px 40px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.1019607843);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.section-01 .workCard .content {
+  color: white;
+  border-bottom: 2px solid white;
+}
+.section-01 .workCard .content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+.section-01 .workCard .content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8px;
+}
+.section-01 .workCard .content .tags {
+  display: flex;
+  margin: 24px 0px 40px 0px;
+}
+.section-01 .workCard .content .tags li {
+  padding: 4px 12px;
+  border-radius: 16px;
+  color: #3B3B3B;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 16px;
+}
+.section-01 .workCard a {
+  display: block;
+  width: 176px;
+  height: 62px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  padding: 16px 32px 16px 32px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  margin: 40px auto;
+}
+.section-01 .workCard a img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 376px) {
+  .section-01 .works01-img {
+    width: 295px;
+    margin: 93px 40px 0px 40px;
+  }
+  .section-01 .workCard {
+    height: 188px;
+    border-radius: 0px;
+    background: white;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    padding: 24px 0 0 0;
+  }
+  .section-01 .workCard .content {
+    border-bottom: none;
+  }
+  .section-01 .workCard .content h3 {
+    color: #1E1E1E;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+  }
+  .section-01 .workCard .content p {
+    color: #5B5B5B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  .section-01 .workCard .content .tags {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px 0px 0px;
+  }
+  .section-01 .workCard .content .tags li {
+    padding: 4px 12px;
+    border-radius: 16px;
+    color: #3B3B3B;
+    background-color: #F1F1F1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    gap: 10px;
+  }
+  .section-01 .workCard a {
+    display: block;
+    width: 128px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin: 20px 123.5px 0px 123.5px;
+  }
+  .section-01 .workCard a img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}
+.section-02 {
+  height: 800px;
+  background-image: url("./img/financial-bg.png");
+}
+.section-02 .bg-black {
+  width: 50%;
+  height: 800px;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 200px 110px 200px 312px;
+}
+.section-02 .workCard {
+  width: 526px;
+  height: 400px;
+  padding: 80px 40px 0px 40px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.1019607843);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.section-02 .workCard .content {
+  color: white;
+  border-bottom: 2px solid white;
+}
+.section-02 .workCard .content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+.section-02 .workCard .content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8px;
+}
+.section-02 .workCard .content .tags {
+  display: flex;
+  margin: 24px 0px 40px 0px;
+}
+.section-02 .workCard .content .tags li {
+  padding: 4px 12px;
+  border-radius: 16px;
+  color: #3B3B3B;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 16px;
+}
+.section-02 .workCard a {
+  display: block;
+  width: 176px;
+  height: 62px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  padding: 16px 32px 16px 32px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  margin: 40px auto;
+}
+.section-02 .workCard a img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+@media (max-width: 376px) {
+  .section-02 {
+    height: 390px;
+    background-image: url("./img/financial-bg-sm.png");
+  }
+  .section-02 .bg-black {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  .section-02 .workCard {
+    height: 188px;
+    border-radius: 0px;
+    background: white;
+    -webkit-backdrop-filter: blur(0px);
+            backdrop-filter: blur(0px);
+    padding: 24px 0 0 0;
+  }
+  .section-02 .workCard .content {
+    border-bottom: none;
+  }
+  .section-02 .workCard .content h3 {
+    color: #1E1E1E;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+  }
+  .section-02 .workCard .content p {
+    color: #5B5B5B;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+  }
+  .section-02 .workCard .content .tags {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0px 0px 0px;
+  }
+  .section-02 .workCard .content .tags li {
+    padding: 4px 12px;
+    border-radius: 16px;
+    color: #3B3B3B;
+    background-color: #F1F1F1;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    gap: 10px;
+  }
+  .section-02 .workCard a {
+    display: block;
+    width: 128px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    padding: 8px 16px 8px 16px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin: 20px 123.5px 0px 123.5px;
+  }
+  .section-02 .workCard a img {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 8px;
+  }
+}
+.section-03 {
+  background: url("./img/beauty-bg.png") no-repeat;
+  height: 800px;
+  padding: 176px 312px 112px 312px;
+}
+.section-03 .workCard {
+  width: 526px;
+  height: 400px;
+  padding: 80px 40px 0px 40px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.1019607843);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+}
+.section-03 .workCard .content {
+  color: white;
+  border-bottom: 2px solid white;
+}
+.section-03 .workCard .content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 33.6px;
+}
+.section-03 .workCard .content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 8px;
+}
+.section-03 .workCard .content .tags {
+  display: flex;
+  margin: 24px 0px 40px 0px;
+}
+.section-03 .workCard .content .tags li {
+  padding: 4px 12px;
+  border-radius: 16px;
+  color: #3B3B3B;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-right: 16px;
+}
+.section-03 .workCard a {
+  display: block;
+  width: 176px;
+  height: 62px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  padding: 16px 32px 16px 32px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  margin: 40px auto;
+}
+.section-03 .workCard a img {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+footer {
+  height: 500px;
+  background-color: gray;
+  margin-top: 100px;
+}/*# sourceMappingURL=index.css.map */
